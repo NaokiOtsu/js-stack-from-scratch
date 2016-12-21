@@ -1,0 +1,23 @@
+{
+  "name": "js-stack-from-scratch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:NaokiOtsu/js-stack-from-scratch.git",
+  "author": "NaokiOtsu <n.otsu1029@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-preset-latest": "^6.16.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  }
+}
