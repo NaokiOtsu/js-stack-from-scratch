@@ -8,16 +8,40 @@
   "scripts": {
     "start": "gulp"
   },
-  "dependencies": {},
+  "dependencies": {
+    "babel-polyfill": "^6.20.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
   "devDependencies": {
+    "babel-loader": "^6.2.10",
     "babel-preset-latest": "^6.16.0",
     "del": "^2.2.2",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "2.2.3",
+    "eslint-plugin-react": "^6.8.0",
     "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2"
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^3.0.1",
+    "webpack-stream": "^3.2.0"
   },
   "babel": {
     "presets": [
       "latest"
     ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "rules": {
+      "comma-dangle": 0
+    },
+    "plugins": [
+      "import"
+    ],
+    "env": {
+      "browser": true
+    }
   }
 }
