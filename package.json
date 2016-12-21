@@ -11,7 +11,9 @@
   "dependencies": {
     "babel-polyfill": "^6.20.0",
     "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "react-dom": "^15.4.1",
+    "react-redux": "^5.0.1",
+    "redux": "^3.6.0"
   },
   "devDependencies": {
     "babel-loader": "^6.2.10",
@@ -37,7 +39,8 @@
   "eslintConfig": {
     "extends": "airbnb",
     "rules": {
-      "comma-dangle": 0
+      "comma-dangle": 0,
+      "import/no-extraneous-dependencies": 0
     },
     "plugins": [
       "import"
