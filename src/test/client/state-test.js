@@ -10,4 +10,20 @@ import { makeBark } from '../../client/actions/dog-actions';
 should();
 let store;
 
-// TODO 以下
+describe('App State', () => {
+  describe('Dog', () => {
+    beforeEach(() => {
+      store = createStore(combineReducers({
+        dog: dogReducer
+      }));
+    });
+
+    describe('makeBark', () => {
+      it('should make hasBarked go from false to true', () => {
+        store.getState().getIn(['dog', 'hasBarked']).should.be.false;
+        store.dispatch(makeBark());
+        store.getState().getIn(['dog', 'hasBarked']).should.be.true;
+      });
+    });
+  });
+});
